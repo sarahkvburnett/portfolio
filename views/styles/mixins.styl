@@ -1,0 +1,82 @@
+flexCenter(direction)
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: direction
+
+border()
+    border: 1px solid $white 
+
+borderRadius(radius)
+    border-radius: radius
+
+buttonDefaults()
+    padding: 2vh 2vw
+    font: inherit
+    cursor: pointer
+    transition: all 2s
+    background: none
+    color: $white
+    upperSpacedText()
+    border()
+    &:hover
+        background: $dkGrey
+
+primaryButton()
+    background: $white
+    color: $dkGrey
+    border: none
+    &:hover 
+        background: $ltGrey
+
+
+formDefaults()
+    background: none
+    font: inherit
+    color: $white
+    transition: all 2s
+    input, textarea, label 
+        margin: 1vh 0
+        display: block
+        width: 90%
+        box-sizing: border-box
+    input, textarea
+        border()
+        borderRadius 5px
+        &:focus 
+            opacity: 0.7
+        padding: 2vh 2vw
+    textarea
+        min-height: 20vh
+        resize: none
+    label 
+        upperSpacedText()   
+        margin: 1vh 0
+     button
+        margin: 2vh
+        width: 90%
+        borderRadius: 5px
+        @media(min-width: desktop)
+            width: auto
+            min-width: 15vw
+
+upperSpacedText()
+    text-transform: uppercase 
+    letter-spacing: 0.2em
+
+size()
+    width: 80vw
+    height: 80vh
+    @media (min-width: tablet)
+        width: 70vw
+        height: 70vh
+    @media (min-width: desktop)
+        width: 60vw
+        height: 60vh
+
+bgImg()
+    // include background: img in template
+    background-color: lightgrey
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover

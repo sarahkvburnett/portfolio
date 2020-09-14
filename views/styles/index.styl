@@ -1,0 +1,59 @@
+@import "variables" 
+@import "mixins"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body 
+    font-family: sans-serif
+    background:  $coral
+    line-height: 1.2
+    overflow-x: hidden
+
+section 
+    height: 100vh
+    width: 100vw
+    flexCenter row
+
+#card 
+    background:  $ltGrey
+    color: $white
+    margin: auto
+    borderRadius 5px
+    padding: 1vh 1vw
+    flexCenter column
+    size()
+    box-shadow: 10px 10px 5px 0px $dkGrey;
+   
+form
+    formDefaults()
+
+button 
+    buttonDefaults()
+
+button.primary
+    primaryButton()
+
+.bgImg 
+    bgImg()
+    borderRadius 50%
+    height: 100px
+    width: 100px
+
+.media
+    button 
+        border()
+        borderRadius 50%
+        width: 50px
+        height: 50px
+        padding: 0
+        flexCenter row
+    svg
+        fill: $white
+        height: 100%
+        width: 100%
+  
+@import "modal"
+@import "contact"

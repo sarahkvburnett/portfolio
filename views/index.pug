@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Sarah Burnett
+        link(rel="stylesheet", href="/styles/index.css")
+        script(src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js")
+    body
+        section
+            #card 
+                .bgImg(style="background-image: url('./imgs/profile-pic.jpg')")
+                h1 Sarah Burnett
+                h2 Web Developer
+                .buttons
+                    button(data-id="about") About
+                    button(data-id="projects") Projects
+                    button(data-id="contact") Contact
+        .modal
+            include contact.pug
+
