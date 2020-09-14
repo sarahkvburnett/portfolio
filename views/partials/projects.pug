@@ -1,0 +1,14 @@
+.projects
+    h1 Projects 
+    each project in projects
+        .project 
+            h2= project.title
+            .bgImg(style=`background-image: url(${project.image})`)
+            p= project.intro 
+            .skills
+                each tool in project.tools
+                    button(class=tool style=`background: ${tools[tool]}`)= tool
+            p 
+                a(href=`${project.source}`) Source
+            p 
+                a(href=`${project.live}`) Live

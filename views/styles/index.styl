@@ -9,24 +9,21 @@
 html, body 
     font-family: sans-serif
     background:  $coral
+    background: linear-gradient(150deg, $coral 19%, $pink 90%);
     line-height: 1.2
     overflow-x: hidden
 
 section 
-    height: 100vh
+    min-height: 100vh
     width: 100vw
     flexCenter row
 
 #card 
-    background:  $ltGrey
-    color: $white
-    margin: auto
-    borderRadius 5px
-    padding: 1vh 1vw
+    card()
     flexCenter column
     size()
-    box-shadow: 10px 10px 5px 0px $dkGrey;
-   
+    background: none;
+
 form
     formDefaults()
 
@@ -57,3 +54,4 @@ button.primary
   
 @import "modal"
 @import "contact"
+@import "projects"

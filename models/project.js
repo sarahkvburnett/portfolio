@@ -6,9 +6,8 @@ const project = new mongoose.Schema({
 		required: true,
     },
     image: {
-        type: 'Buffer',
+        type: String,
         required: true
-
     },
     tools: {
         type: [String],
@@ -28,4 +27,4 @@ const project = new mongoose.Schema({
     }
 });
 
-module.export = mongoose.Model("Project", project);
+module.exports = mongoose.model("Project", project);
