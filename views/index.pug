@@ -5,22 +5,27 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Sarah Burnett
         link(rel="stylesheet", href="/styles/index.css")
-        script(src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js")
+        script(src="https://kit.fontawesome.com/9a0f5c6986.js" crossorigin="anonymous")
     body
         section
             #card 
                 .bgImg(style="background-image: url('./imgs/profile-pic.jpg')")
-                h1 Sarah Burnett
-                h2 Web Developer
+                .line
+                .headings
+                    h1 Sarah Burnett
+                    h2 Web Developer
+                .line
                 .buttons
-                    button(data-id="about") About
-                    button(data-id="projects") Projects
-                    button(data-id="contact") Contact
-        .modal
-            h1 About
-            p Web developer
-        section
+                    a(href="#about") About
+                    a(href="#cv") CV
+                    a(href="#projects") Projects
+                    a(href="#contact") Contact
+                .line
+        section#about
+           include partials/about.pug
+        section#projects
             include partials/projects.pug
-        .modal
+        section#contact
             include partials/contact.pug
+
 

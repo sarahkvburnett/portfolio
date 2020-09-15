@@ -19,15 +19,15 @@ app.set("view engine", "pug");
 app.set("views", path.join(__dirname + "/views"));
 
 const tools = {
-    Node: '#5C8658',
-    Mongo: '#13AA52',
-    Mongoose: '#880000',
-    Express: '#53B1FE',
-    JavaScript: '#F0DB4F',
-    React: '#61DAFB',
-    CSS: '#214CE5',
-    SASS: '#CF649A',
-    Stylus: '#FF6347'
+	Node: "#5C8658",
+	Mongo: "#13AA52",
+	Mongoose: "#880000",
+	Express: "#53B1FE",
+	JavaScript: "#F7DF1E",
+	React: "#61DAFB",
+	CSS: "#214CE5",
+	SASS: "#CF649A",
+	Stylus: "#FF6347",
 };
 
 
