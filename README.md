@@ -1,6 +1,6 @@
 # Portfolio
 
-> Thought I would make myself a portfolio to demonstrate progress so far... <br> Using express and pug templating to pull in project info from MongoDB as felt more appropriate than react for this. Usting stylus a go for styling so two lots of indentation.
+> Start of a portfolio site with Express/Pug/Stylus/MongoDB
 
 Landing page with these sections:
 - Intro card
@@ -18,5 +18,5 @@ Landing page with these sections:
 
 ## Installation
 ``` bash
-# See package.json to start express and run stlus css compiler
+# See package.json to start express and run stylus css compiler
 ```
