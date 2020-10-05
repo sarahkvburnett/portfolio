@@ -14,12 +14,19 @@ stylus = #FF6347
     background: $ltgrey
     color: $white
 
+.projects
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+
 .project
     card()
-    setWidth()
-    margin: 2vh 0
+    margin: 4vh 4vw
     padding: 2vh 2vw
     button 
         color: black
         border: none
         font-size: 16px
+    &&:not(:hover)
+        transform: scale(0.95);
+    .buttons
+        display: flex

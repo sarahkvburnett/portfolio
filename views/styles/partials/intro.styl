@@ -1,0 +1,38 @@
+nav 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100vw
+    height: 10vh
+    background: $coral
+    margin: 0;
+    .buttons
+            a
+                display: block
+                text-align: center
+                font-size: 14px
+                margin: 0
+            @media (min-width: desktop) 
+                display: grid
+                grid-template-columns: repeat(4, 1fr)
+
+#card 
+    card()
+    setWidth()
+    flexCenter column
+    justify-content: space-between
+    background: none
+    position: relative
+    padding: 5vh 2vw
+    .bgImg
+        border()
+    .headings
+        width: 60%
+        padding: 2vh 2vw
+        text-align: center
+        border-left: none 
+        border-right: none
+        * 
+            margin: 2vh 0
+
+

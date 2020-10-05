@@ -10,7 +10,6 @@ body {
   line-height: 1.2;
   overflow-x: hidden;
   font-size: 18px;
-  background: linear-gradient(150deg, #ff6347 19%, #cf649a 90%);
   scroll-behavior: smooth;
 }
 section {
@@ -21,6 +20,7 @@ section {
   justify-content: center;
   flex-direction: column;
   padding: 5vh 2vw;
+  background: #3b3a36;
 }
 h1 {
   font-size: 26px;
@@ -30,13 +30,13 @@ h2 {
   font-size: 20px;
 }
 a {
-  color: #fff;
+  color: #fdfdfd;
   text-decoration: none;
 }
 form {
   background: none;
   font: inherit;
-  color: #fff;
+  color: #fdfdfd;
   transition: all 2s;
 }
 form input,
@@ -49,7 +49,7 @@ form label {
 }
 form input,
 form textarea {
-  border: 1px solid #fff;
+  border: 1px solid #fdfdfd;
   border-radius: 5px;
   padding: 2vh 2vw;
 }
@@ -83,18 +83,18 @@ button {
   cursor: pointer;
   transition: all 2s;
   background: none;
-  color: #fff;
+  color: #fdfdfd;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  border: 1px solid #fff;
+  border: 1px solid #fdfdfd;
 }
 button:hover {
-  background: #3b3a36;
+  background: #ff6347;
 }
 button.primary {
-  background: #fff;
+  background: #fdfdfd;
   color: #3b3a36;
-  border: 1px solid #fff;
+  border: 1px solid #fdfdfd;
 }
 button.primary:hover {
   background: #757572;
@@ -108,12 +108,33 @@ button.primary:hover {
   height: 100px;
   width: 100px;
 }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+  background: #ff6347;
+  margin: 0;
+}
+nav .buttons a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+@media (min-width: 800px) {
+  nav .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 #card {
-  color: #fff;
+  color: #fdfdfd;
   margin: auto;
   border-radius: 5px;
   padding: 1vh 1vw;
-  box-shadow: 0 1px 3px #3b3a36, 0 1px 2px #3b3a36;
+  border: 1px solid #fdfdfd;
   width: 80vw;
   display: flex;
   align-items: center;
@@ -134,44 +155,13 @@ button.primary:hover {
     width: 60vw;
   }
 }
-#card .line {
-  margin: 0;
-  background: linear-gradient(#fff, #fff) no-repeat center/1px 100%;
-  height: 5vh;
-  width: 100%;
-}
 #card .bgImg {
-  border: 1px solid #fff;
-}
-#card .buttons a {
-  padding: 2vh 2vw;
-  font: inherit;
-  cursor: pointer;
-  transition: all 2s;
-  background: none;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  border: 1px solid #fff;
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  margin: 0;
-}
-#card .buttons a:hover {
-  background: #3b3a36;
-}
-@media (min-width: 800px) {
-  #card .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+  border: 1px solid #fdfdfd;
 }
 #card .headings {
   width: 60%;
   padding: 2vh 2vw;
   text-align: center;
-  border: 1px solid #fff;
   border-left: none;
   border-right: none;
 }
@@ -179,8 +169,8 @@ button.primary:hover {
   margin: 2vh 0;
 }
 #about {
-  background: #3b3a36;
-  color: #fff;
+  background: #fdfdfd;
+  color: #3b3a36;
 }
 .intro,
 .stack {
@@ -210,79 +200,35 @@ button.primary:hover {
   width: 40px;
   margin: 1vh 10px;
 }
-#contact {
-  background: #3b3a36;
-  color: #fff;
-}
-form {
-  width: 80vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-@media (min-width: 500px) {
-  form {
-    width: 70vw;
-  }
-}
-@media (min-width: 800px) {
-  form {
-    width: 60vw;
-  }
-}
-.media {
-  width: 80vw;
-  font-size: 30px;
-  margin: 1vh 0;
-  transition: all 2s;
-}
-@media (min-width: 500px) {
-  .media {
-    width: 70vw;
-  }
-}
-@media (min-width: 800px) {
-  .media {
-    width: 60vw;
-  }
-}
-.media p {
-  width: 90%;
-  margin: auto;
-}
-.media a {
-  color: #fff;
-}
-.media i {
-  margin-right: 0.5em;
-}
 #projects {
   background: $ltgrey;
-  color: #fff;
+  color: #fdfdfd;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .project {
-  color: #fff;
+  color: #fdfdfd;
   margin: auto;
   border-radius: 5px;
   padding: 1vh 1vw;
-  box-shadow: 0 1px 3px #3b3a36, 0 1px 2px #3b3a36;
-  width: 80vw;
-  margin: 2vh 0;
+  border: 1px solid #fdfdfd;
+  margin: 4vh 4vw;
   padding: 2vh 2vw;
-}
-@media (min-width: 500px) {
-  .project {
-    width: 70vw;
-  }
-}
-@media (min-width: 800px) {
-  .project {
-    width: 60vw;
-  }
 }
 .project button {
   color: #000;
-  border: 1px solid #fff;
+  border: 1px solid #fdfdfd;
   font-size: 16px;
+}
+.project.project:not(:hover) {
+  transform: scale(0.95);
+}
+.project .buttons {
+  display: flex;
+}
+#footer {
+  background: #ff6347;
+  height: 20vh;
 }

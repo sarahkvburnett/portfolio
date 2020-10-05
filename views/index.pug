@@ -8,24 +8,23 @@ html(lang="en")
         script(src="https://kit.fontawesome.com/9a0f5c6986.js" crossorigin="anonymous")
     body
         section
-            #card 
+            nav
                 .bgImg(style="background-image: url('./imgs/profile-pic.jpg')")
-                .line
-                .headings
-                    h1 Sarah Burnett
-                    h2 Web Developer
-                .line
                 .buttons
                     a(href="#about") About
                     a(href="#cv") CV
                     a(href="#projects") Projects
                     a(href="#contact") Contact
-                .line
+            #card 
+                .headings
+                    h1 Sarah Burnett
+                    h2 Web Developer
+                    include partials/links.pug
         section#about
            include partials/about.pug
         section#projects
             include partials/projects.pug
-        section#contact
-            include partials/contact.pug
+        #footer
+            include partials/links.pug
 
 

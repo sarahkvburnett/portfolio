@@ -1,5 +1,5 @@
-@import "variables" 
-@import "mixins"
+@import "utilities/variables" 
+@import "utilities/mixins"
 
 *
     margin: 0
@@ -12,7 +12,6 @@ html, body
     line-height: 1.2
     overflow-x: hidden
     font-size: 18px
-    background: linear-gradient(150deg, $coral 19%, $pink 90%)
     scroll-behavior: smooth
 
 section 
@@ -20,6 +19,7 @@ section
     width: 100vw
     flexCenter column
     padding: 5vh 2vw
+    background: $dkGrey
 
 h1 
     font-size: 26px
@@ -47,7 +47,7 @@ button.primary
     height: 100px
     width: 100px
 
-@import "intro"
-@import "about"
-@import "contact"
-@import "projects"
+@import "partials/intro"
+@import "partials/about"
+@import "partials/projects"
+@import "partials/footer"
