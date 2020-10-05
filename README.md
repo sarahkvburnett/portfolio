@@ -8,8 +8,10 @@ Landing page with these sections:
 - Projects with individual project cards
 
 ## To do
+- Sort out styling
+- Add validation to contact form and connect to email (?)
+- Sort out alignment issue with intro card
 - Tooltip for language/framework/etc. icons
-- Style project - color code tools because color/neon is in!
 - Compress imgs
 - Add CV 
 
