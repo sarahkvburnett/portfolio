@@ -1,0 +1,79 @@
+nav {
+	padding: 2vh 10vw;
+	text-align: right;
+	font-size: 20px;
+	#lightbulb {
+		cursor: pointer;
+		&:hover {
+			color: var(--primary);
+		}
+	}
+	@include media($desktop) {
+		padding: 2vh 4.5vw;
+	}
+}
+
+.lightbulb-on {
+	color: var(--primary);
+	&:hover {
+		color: $dark !important;
+	}
+}
+
+#main {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow-x: hidden;
+	text-align: center;
+	padding: 2vh;
+	h1 {
+		margin: 2vh 0;
+		background: -webkit-linear-gradient(
+			180deg,
+			var(--primary) 59%,
+			var(--color) 59%,
+			var(--color) 61%,
+			var(--secondary) 61%
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+		background-size: 300% 100%;
+		background-origin: border-box;
+		animation: background-stripe 20s linear infinite;
+		@media (min-width: $desktop) {
+			font-size: 100px;
+			letter-spacing: 2px;
+		}
+	}
+	h3 {
+		letter-spacing: 4px;
+	}
+	& > * {
+		margin: 1vh 0;
+	}
+	svg {
+		margin: 2px;
+	}
+	#icons {
+		font-size: 40px;
+	}
+}
+
+#main-tags {
+	font-size: 30px;
+}
+
+#main-btns {
+	display: flex;
+	flex-direction: column;
+	button,
+	.button {
+		display: block;
+		margin: 1vh;
+	}
+}

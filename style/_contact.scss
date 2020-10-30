@@ -1,0 +1,22 @@
+#contact {
+	padding: 3vh;
+	text-align: center;
+	h2 {
+		margin: 3vh 0;
+	}
+	background: var(--secondary);
+}
+
+#contact-btns {
+	margin: 3vh 0;
+	a {
+		font-size: 60px;
+		margin-right: 3vh;
+		&:hover {
+			color: var(--primary);
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

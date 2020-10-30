@@ -1,0 +1,85 @@
+#projects {
+	min-height: 100vh;
+	margin: 3vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		margin: 3vh 0;
+		text-align: center;
+	}
+	#project-wrapper {
+		display: grid;
+		grid-template-columns: auto;
+		justify-items: center;
+		@include media(800px){
+		    grid-template-columns: auto auto;
+		}
+		@include media(1600px){
+		    grid-template-columns: repeat(4, auto);
+		}
+	}
+	.project {
+		margin: 2vh;
+		border: 1px solid var(--border);
+		border-radius: 15px;
+		max-width: 350px;
+		height: auto;
+		& > * {
+			margin: 1vh 0;
+			padding: 0 2vh;
+		}
+		h3 {
+			padding: 2vh;
+			text-align: center;
+		}
+		img {
+			margin: 0;
+			padding: 0;
+			max-width: 100%;
+		}
+		p {
+			font-size: larger;
+		}
+		.tags {
+			display: flex;
+			flex-wrap: wrap;
+			.button {
+				background: $medium;
+				color: $dark;
+				font-size: smaller;
+				margin-right: 5px;
+				margin-bottom: 5px;
+				padding: 5px;
+			}
+		}
+		.button {
+			display: block;
+			border-radius: 5px;
+			cursor: default;
+		}
+		.project-btns {
+			display: flex;
+			justify-content: space-between;
+			border-top: 1px solid var(--border);
+			margin: 0;
+			padding: 0;
+			a {
+				display: block;
+				width: 50%;
+				padding: 2vh;
+				text-align: center;
+				border: none;
+				border-radius: 0;
+				cursor: pointer;
+				&:first-child {
+					border-right: 1px solid var(--border);
+					border-bottom-left-radius: 13px;
+				}
+				&:last-child {
+					border-bottom-right-radius: 13px;
+				}
+			}
+		}
+	}
+}

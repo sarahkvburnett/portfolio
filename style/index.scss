@@ -1,0 +1,58 @@
+@import "variables";
+@import "main";
+@import "projects";
+@import "contact";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	width: 100vw;
+}
+
+body {
+	background: var(--bg);
+	border-color: var(--border);
+	@include font;
+}
+
+h1 {
+	font-size: 450%;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+button,
+.button {
+	padding: 2vh;
+	border: 1px solid var(--color);
+	@include font;
+	color: $dark;
+	text-transform: uppercase;
+	background: var(--primary);
+	transition: background 1s;
+	letter-spacing: 2px;
+	font-weight: bold;
+	scroll-behavior: smooth;
+	cursor: pointer;
+	&:hover {
+		background: var(--secondary);
+	}
+}
+
+a {
+	@include font;
+	text-decoration: none;
+}

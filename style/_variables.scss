@@ -1,0 +1,57 @@
+$dark: #000000;
+$light: #fbfbfb;
+$medium: #f8f8f8;
+
+$tablet: 500px;
+$desktop: 950px;
+
+:root {
+	--color: #fbfbfb;
+	--bg: #000000;
+	--border: $medium;
+	--primary: #f7df1e;
+	--secondary: #61dbfb;
+	--font: "Nunito Sans", sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color: #000000;
+		--bg: #fbfbfb;
+		--border: #000000;
+	}
+}
+
+@mixin font {
+	color: var(--color);
+	font-family: var(--font);
+	font-size: 14px;
+	line-height: 1.2;
+	@media ($tablet) {
+		font-size: 20px;
+	}
+}
+
+@mixin media($bp) {
+	@media (min-width: $bp) {
+		@content;
+	}
+}
+
+@keyframes background-stripe {
+	0% {
+		background-position: 0% 50%;
+	}
+	25% {
+		background-position: 100% 50%;
+	}
+	50% {
+		background-position: 0% 50%;
+	}
+	75% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
