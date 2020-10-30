@@ -18,3 +18,7 @@ document.querySelector(".lightbulb").addEventListener("click", function () {
 		isDarkMode = true;
 	}
 });
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+   isDarkMode = false;
+}
